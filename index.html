@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorous FAQs - Ador Ahmed</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .bio {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .link-item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .link-item:hover {
+            background-color: #2980b9;
+        }
+        .faq-cta {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://avatars.githubusercontent.com/u/176538736?v=4" alt="Ador Ahmed" class="profile-img">
+            <h1>Ador Ahmed (ChefAdorous)</h1>
+        </header>
+        <div class="bio">
+            <p>🍀 Creating secure and innovative blockchain solutions.</p>
+            <p>Open for collaborations and consulting opportunities</p>
+            <p>ETH/BSC: 0xb549579A6d5Ccfa3f8B143D11BCb4BF1494f7880</p>
+        </div>
+        <div class="links">
+            <a href="mailto:chefadorous@icloud.com" class="link-item">📧 Email</a>
+            <a href="https://chefadorous.me" class="link-item">🌐 Website</a>
+            <a href="https://twitter.com/ChefAdorous" class="link-item">🐦 Twitter</a>
+            <a href="https://www.instagram.com/ChefAdorous" class="link-item">📷 Instagram</a>
+            <a href="https://www.facebook.com/ChefAdorous" class="link-item">👥 Facebook</a>
+            <a href="https://www.reddit.com/user/ChefAdorous" class="link-item">🔴 Reddit</a>
+            <a href="https://t.me/ChefAdorous" class="link-item">📱 Telegram</a>
+        </div>
+        <div class="faq-cta">
+            <p>After reading the FAQs, join our community:</p>
+            <a href="https://t.me/+zNlO-UcYk7I2NmU1" class="cta-button">Join Telegram Group</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.link-item');
+            links.forEach(link => {
+                link.addEventListener('mouseover', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                link.addEventListener('mouseout', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
