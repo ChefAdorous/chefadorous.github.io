@@ -3,114 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adorous FAQs - Ador Ahmed</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            margin-top: 50px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        .bio {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .link-item {
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .link-item:hover {
-            background-color: #2980b9;
-        }
-        .faq-cta {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #2ecc71;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #27ae60;
-        }
-    </style>
+    <title>Ador Ahmed - Blockchain Architect & Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="https://avatars.githubusercontent.com/u/176538736?v=4" alt="Ador Ahmed" class="profile-img">
-            <h1>Ador Ahmed (ChefAdorous)</h1>
-        </header>
-        <div class="bio">
-            <p>🍀 Creating secure and innovative blockchain solutions.</p>
-            <p>Open for collaborations and consulting opportunities</p>
-            <p>ETH/BSC: 0xb549579A6d5Ccfa3f8B143D11BCb4BF1494f7880</p>
-        </div>
-        <div class="links">
-            <a href="mailto:chefadorous@icloud.com" class="link-item">📧 Email</a>
-            <a href="https://chefadorous.me" class="link-item">🌐 Website</a>
-            <a href="https://twitter.com/ChefAdorous" class="link-item">🐦 Twitter</a>
-            <a href="https://www.instagram.com/ChefAdorous" class="link-item">📷 Instagram</a>
-            <a href="https://www.facebook.com/ChefAdorous" class="link-item">👥 Facebook</a>
-            <a href="https://www.reddit.com/user/ChefAdorous" class="link-item">🔴 Reddit</a>
-            <a href="https://t.me/ChefAdorous" class="link-item">📱 Telegram</a>
-        </div>
-        <div class="faq-cta">
-            <p>After reading the FAQs, join our community:</p>
-            <a href="https://t.me/+zNlO-UcYk7I2NmU1" class="cta-button">Join Telegram Group</a>
+<body class="bg-gray-100">
+    <div id="app" class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-light-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+            <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                <div class="max-w-md mx-auto">
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/176538736?v=4" class="h-24 w-24 rounded-full mx-auto" alt="Ador Ahmed">
+                        <div class="text-center mt-5">
+                            <h1 class="text-3xl font-semibold text-gray-900">Ador Ahmed</h1>
+                            <p class="text-xl text-gray-600">Blockchain Architect | Smart Contract Developer | Web3 Innovator</p>
+                        </div>
+                    </div>
+                    
+                    <div class="divide-y divide-gray-200">
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                            <h2 class="text-2xl font-bold">Expertise</h2>
+                            <ul class="list-disc space-y-2 pl-4">
+                                <li>Smart Contract Development</li>
+                                <li>DeFi Protocol Design</li>
+                                <li>Blockchain Architecture</li>
+                                <li>Web3 Integration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                            <h2 class="text-2xl font-bold">Tech Stack</h2>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-gray-200 rounded-full text-sm">Solidity</span>
+                                <span class="px-2 py-1 bg-gray-200 rounded-full text-sm">Ethereum</span>
+                                <span class="px-2 py-1 bg-gray-200 rounded-full text-sm">React</span>
+                                <span class="px-2 py-1 bg-gray-200 rounded-full text-sm">Node.js</span>
+                                <span class="px-2 py-1 bg-gray-200 rounded-full text-sm">Python</span>
+                            </div>
+                        </div>
+                        
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                            <h2 class="text-2xl font-bold">Repositories</h2>
+                            <ul id="repos-list" class="list-disc space-y-2 pl-4">
+                                <!-- Repositories will be dynamically added here -->
+                            </ul>
+                        </div>
+                        
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                            <h2 class="text-2xl font-bold">Donate</h2>
+                            <div id="wallet-section">
+                                <button id="connect-wallet" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Connect Wallet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('.link-item');
-            links.forEach(link => {
-                link.addEventListener('mouseover', function() {
-                    this.style.transform = 'scale(1.05)';
+        // Fetch repositories
+        fetch('https://api.github.com/users/ChefAdorous/repos')
+            .then(response => response.json())
+            .then(repos => {
+                const reposList = document.getElementById('repos-list');
+                repos.forEach(repo => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = repo.html_url;
+                    a.textContent = repo.name;
+                    a.className = 'text-blue-500 hover:underline';
+                    li.appendChild(a);
+                    reposList.appendChild(li);
                 });
-                link.addEventListener('mouseout', function() {
-                    this.style.transform = 'scale(1)';
-                });
-            });
-        });
+            })
+            .catch(error => console.error('Error fetching repositories:', error));
+
+        // Wallet connection
+        let provider, signer, address;
+
+        async function connectWallet() {
+            try {
+                await window.ethereum.request({ method: 'eth_requestAccounts' });
+                provider = new ethers.providers.Web3Provider(window.ethereum);
+                signer = provider.getSigner();
+                address = await signer.getAddress();
+                updateWalletSection();
+            } catch (error) {
+                console.error('Failed to connect wallet:', error);
+            }
+        }
+
+        function disconnectWallet() {
+            provider = null;
+            signer = null;
+            address = null;
+            updateWalletSection();
+        }
+
+        function updateWalletSection() {
+            const walletSection = document.getElementById('wallet-section');
+            if (address) {
+                walletSection.innerHTML = `
+                    <p>Connected: ${address.slice(0, 6)}...${address.slice(-4)}</p>
+                    <button id="disconnect-wallet" class="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Disconnect</button>
+                `;
+                document.getElementById('disconnect-wallet').addEventListener('click', disconnectWallet);
+            } else {
+                walletSection.innerHTML = `
+                    <button id="connect-wallet" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Connect Wallet</button>
+                `;
+                document.getElementById('connect-wallet').addEventListener('click', connectWallet);
+            }
+        }
+
+        // Initial setup
+        updateWalletSection();
     </script>
 </body>
 </html>
